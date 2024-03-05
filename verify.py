@@ -2,6 +2,28 @@ import preguntas as p
 
 
 def verificar(alternativas, eleccion):
+    """
+    Valida que la opción escogida sea la respuesta correcta a la pregunta.
+    ------------
+    Parameter
+    ------------
+    alternativas
+        Type:   Array
+        Ejemplo:    [['alt_2', 0], 
+                    ['alt_4', 1], 
+                    ['alt_3', 0], 
+                    ['alt_1', 0]]
+    eleccion
+        Type: String
+        Posibles valores: 'a', 'b', 'c', 'd' 
+        
+    Return
+    ------------
+    correcto
+        Type:   Boolean
+        Ejemplo:    Respuesta correcta = True
+                    Respuesta incorrecta = False
+    """
     #devuelve el índice de elección dada
     eleccion = ['a', 'b', 'c','d'].index(eleccion)
     correcto = False

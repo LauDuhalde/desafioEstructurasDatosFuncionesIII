@@ -2,10 +2,27 @@ import preguntas as p
 from string import ascii_uppercase
 
 def print_pregunta(enunciado, alternativas):
+    """
+    Muestra en patalla el enunciado de la pregunta y sus alternativas.
+    No tiene retorno.
+    ------------
+    Parameter
+    ------------
+    pregunta['enunciado']
+        Type:   Array
+        Ejemplo:    ['Enunciado básico 1']
     
+    alternativas:
+        Type:   Array
+        Ejemplo:    [['alt_2', 0], 
+                    ['alt_4', 1], 
+                    ['alt_3', 0], 
+                    ['alt_1', 0]] 
+    """
     # Imprimir enunciado y alternativas
     ###############################################################
-    print(enunciado[0])
+    for leer_enunciado  in enunciado:
+        print(leer_enunciado)
     for i, alternativa in enumerate(alternativas):
         print(ascii_uppercase[i]+". "+alternativa[0])
 

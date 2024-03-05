@@ -1,5 +1,21 @@
 def choose_level(n_pregunta, p_level):
-    
+    """
+    Devuelve el nivel de la pregunta, según el número de pregunta y la cantidad de preguntas por nivel.
+    ------------
+    Parameter
+    ------------
+    n_pregunta
+        Type:   Int
+        Descripción:    Número de pregunta (cantidad)
+    p_level:
+        Type: Int
+        Descripción:    Cantidad de preguntas por nivel, nivel 1 a 3
+    Return
+    ------------
+    level
+        Type:   String
+        Posibles valores:   'basicas', 'intermedias', 'avanzadas'
+    """
     # Construir lógica para escoger el nivel
     ##################################################
     level = ""

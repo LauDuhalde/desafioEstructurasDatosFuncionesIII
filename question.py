@@ -10,6 +10,28 @@ opciones = {'basicas': [1,2,3],
 ###############################################
 
 def choose_q(dificultad):
+    """
+    Escoge pregunta según dificultad, va de 1 a 3 preguntas y utiliza el indice de opciones para no repetir preguntas.
+    Devuelve el enunciado de la pregunta y las alternativas mezcladas.
+    ------------
+    Parameter
+    ------------
+    dificultad
+        Type:   String
+        Posibles valores:   'basicas', 'intermedias', 'avanzadas'
+    Return
+    ------------
+    pregunta['enunciado']
+        Type:   Array
+        Ejemplo:    ['Enunciado básico 1']
+    
+    alternativas
+        Type:   Array
+        Ejemplo:    [['alt_2', 0], 
+                    ['alt_4', 1], 
+                    ['alt_3', 0], 
+                    ['alt_1', 0]] 
+    """
     #escoger preguntas por dificultad
     preguntas = p.pool_preguntas[dificultad]
     

@@ -1,5 +1,25 @@
 
 def validate(opciones, eleccion):
+    """
+    Valida que la opción escogida esté dentro de las opciones permitidas.
+    ------------
+    Parameter
+    ------------
+    opciones
+        Type:   Array
+        Ejemplo:    ['a', 'b', 'c', 'd']
+    eleccion
+        Type: String
+        Posibles valores: letras o números
+        Ejemplo:    [0, 1]
+        
+    Return
+    ------------
+    eleccion
+        Type:   String
+        Descripción:    Opción válida escogida
+    """
+    
     # Definir validación de eleccion
     ##########################################################################
     if eleccion not in opciones:
