@@ -1,3 +1,5 @@
+##No se cambian valores para no afectar las pruebas pre definidas
+
 preguntas_basicas = {
     'pregunta_1': {'enunciado':['Enunciado básico 1'],
     'alternativas': [['alt_1', 0], 
